@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/formulario.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Formulario</title>
+</head>
+<body>
+    <main>
+        <h1>Crear voluntario</h1>
+        <form id="formulario" action="#" method="post" enctype="multipart/form-data">
+            <!-- Datos personales -->
+            <div class="form-space">
+            <div class="form-items">
+                <h2 class="heading">Información basica</h2>
+                <div class="form-group">
+                    
+                    <div class="field">
+                        <label for="documento">Documento</label>
+                        <input type="text" id="documento" name="documento" >    
+                        <div class="error"></div>
+                    </div>
+            
+                    <div class="field">
+                        <label for="tipoDocumento">Tipo Documento</label>
+                        <select id="tipoDocumento" name="tipoDocumento" >
+                            <option selected disabled>Seleccionar</option>
+                            <option value="cc">Cédula de Ciudadanía</option>
+                            <option value="ti">Tarjeta de Identidad</option>
+                            <!-- Agrega más opciones según tus necesidades -->
+                        </select>
+                        <div class="error"></div>
+                    </div>
+            
+                    <div class="field">
+                        <label for="primerNombre">Primer Nombre</label>
+                        <input type="text" id="nombre" name="primerNombre" >
+                        <div class="error"></div>
+                    </div>
+            
+                    <div class="field">
+                        <label for="segundoNombre">Segundo Nombre</label>
+                        <input type="text" id="nombre" name="segundoNombre">
+                        <div class="error"></div>
+                    </div>
+            
+                    <div class="field">
+                        <label for="primerApellido">Primer Apellido</label>
+                        <input type="text" id="apellido" name="primerApellido" >
+                        <div class="error"></div>
+                    </div>
+            
+                    <div class="field">
+                        <label for="segundoApellido">Segundo Apellido</label>
+                        <input type="text" id="apellido" name="segundoApellido">
+                        <div class="error"></div>
+                    </div>
+            
+                    <div class="field">
+                        <label for="fechaNacimiento">Fecha de Nacimiento</label>
+                        <input type="date" id="fechaNacimiento" name="fechaNacimiento" >
+                        <div class="error"></div>
+                    </div>
+            
+                    <div class="field">
+                        <label for="edad">Edad</label>
+                        <input type="text" id="edad" name="edad" >
+                        <div class="error"></div>
+                    </div>
+            
+                    <div class="field">
+                        <label for="paisNacimiento">País de Nacimiento</label>
+                        <select id="paisNacimiento" name="paisNacimiento" >
+                            <option selected disabled>Seleccionar</option>
+                            <option value="colombia">Colombia</option>
+                            <!-- Agrega más opciones según tus necesidades -->
+                        </select>
+                        <div class="error"></div>
+                    </div>
+            
+                    <div class="field">
+                        <label for="deptNacimiento">Departamento de Nacimiento</label>
+                        <select id="deptNacimiento" name="deptNacimiento" >
+                            <option selected disabled>Seleccionar</option>
+                            <option value="antioquia">Antioquia</option>
+                            <!-- Agrega más opciones según tus necesidades -->
+                        </select>
+                        <div class="error"></div>
+                    </div>
+            
+                    <div class="field">
+                        <label for="munNacimiento">Municipio de Nacimiento:</label>
+                        <select id="munNacimiento" name="munNacimiento" >
+                            <option selected disabled>Seleccionar</option>
+                            <option value="medellin">Medellín</option>
+                            <!-- Agrega más opciones según tus necesidades -->
+                        </select>
+                        <div class="error"></div>
+                    </div>
+            
+                    <div class="field">
+                        <label for="genero">Género:</label>
+                        <select id="genero" name="genero" >
+                            <option selected disabled>Seleccionar</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                            <!-- Agrega más opciones según tus necesidades -->
+                        </select>
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="field">
+                        <label for="alergia">¿Posee alguna alergia?</label>
+                        <select id="alergia" name="alergia" >
+                            <option selected disabled>Seleccionar</option>
+                            <option value="si">Sí</option>
+                            <option value="no">No</option>
+                        </select>
+                        <div class="error"></div>
+                    </div>
+            
+                    <div class="field">
+                        <label for="tipoAlergia">Tipo de Alergia</label>
+                        <input type="text" id="tipoAlergia" name="tipoAlergia">
+                        <div class="error"></div>
+                    </div>
+                    
+            
+                    <div class="field">
+                        <label for="eps">EPS</label>
+                        <select id="eps" name="eps" >
+                            <option selected disabled>Seleccionar</option>
+                            <option value="compensar">Compensar</option>
+                            <!-- Agrega más opciones según tus necesidades -->
+                        </select>
+                        <div class="error"></div>
+                    </div>
+            
+                    <div class="field">
+                        <label for="fondoPension">Fondo de Pensión</label>
+                        <select id="fondoPension" name="fondoPension" >
+                            <option selected disabled>Seleccionar</option>
+                            <option value="porvenir">Porvenir</option>
+                            <!-- Agrega más opciones según tus necesidades -->
+                        </select>
+                        <div class="error"></div>
+                    </div>
+            
+                    <div class="field">
+                        <label for="grupoSanguineo">Grupo Sanguíneo y Factor RH</label>
+                        <select id="grupoSanguineo" name="grupoSanguineo" >
+                            <option selected disabled>Seleccionar</option>
+                            <option value="a+">A+</option>
+                            <!-- Agrega más opciones según tus necesidades -->
+                        </select>
+                        <div class="error"></div>
+                    </div>
+            
+                    <div class="field">
+                        <label for="barrio">Barrio/Vereda/Corregimiento</label>
+                        <input type="text" id="barrio" name="barrio">
+                        <div class="error"></div>
+                    </div>
+            
+                    <div class="field">
+                        <label for="direccionResidencia">Dirección de Residencia</label>
+                        <input type="text" id="direccionResidencia" name="direccionResidencia" >
+                        <div class="error"></div>
+                    </div>
+            
+                    <div class="field">
+                        <label for="deptResidencia">Departamento de Residencia</label>
+                        <select id="deptResidencia" name="deptResidencia" >
+                            <option selected disabled>Seleccionar</option>
+                            <option value="antioquia">Antioquia</option>
+                            <!-- Agrega más opciones según tus necesidades -->
+                        </select>
+                        <div class="error"></div>
+                    </div>
+            
+                    <div class="field">
+                        <label for="munResidencia">Municipio de Residencia</label>
+                        <select id="munResidencia" name="munResidencia" >
+                            <option selected disabled>Seleccionar</option>
+                            <option value="medellin">Medellín</option>
+                            <!-- Agrega más opciones según tus necesidades -->
+                        </select>
+                        <div class="error"></div>
+                    </div>
+            
+                    <!-- Datos de contacto -->
+                    <div class="field">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" >
+                        <div class="error"></div>
+                    </div>
+            
+                    <div class="field">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" >
+                        <div class="error"></div>
+                    </div>
+            
+                    <div class="field">
+                        <label for="fotografia">Fotografía</label>
+                        <input type="file" id="fotografia" name="fotografia" accept="image/*">
+                        <div class="error"></div>
+                    </div>
+            
+                    <div class="field">
+                        <label for="estadoCivil">Estado Civil</label>
+                        <select id="estadoCivil" name="estadoCivil" >
+                            <option selected disabled>Seleccionar</option>
+                            <option value="soltero">Soltero/a</option>
+                            <option value="casado">Casado/a</option>
+                            <!-- Agrega más opciones según tus necesidades -->
+                        </select>
+                        <div class="error"></div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+
+            <div class="form-space">
+            <div class="form-items">
+                <!-- Datos laborales -->
+                <h2 class="heading">Información profesional</h2>
+                <div class="form-group">
+                    <div class="field">
+                        <label for="profesion">Profesión u Oficio</label>
+                        <input type="text" id="profesion" name="profesion" >
+                        <div class="error"></div>
+                    </div>
+            
+                    <div class="field">
+                        <label for="habilidades">Habilidades en Otras Áreas</label>
+                        <textarea id="habilidades" name="habilidades"></textarea>
+                        <div class="error"></div>
+                    </div>
+            
+                    <div class="field">
+                        <label for="hablaOtroIdioma">¿Habla otro idioma?</label>
+                        <select id="hablaOtroIdioma" name="hablaOtroIdioma" >
+                            <option selected disabled>Seleccionar</option>
+                            <option value="si">Sí</option>
+                            <option value="no">No</option>
+                        </select>
+                        <div class="error"></div>
+                    </div>
+            
+                    <div class="field">
+                        <label for="otroIdioma">Si habla otro idioma, indique cuál</label>
+                        <select id="otroIdioma" name="otroIdioma">
+                            <option selected disabled>Seleccionar</option>
+                            <option value="ingles">Inglés</option>
+                            <!-- Agrega más opciones según tus necesidades -->
+                        </select>
+                        <div class="error"></div>
+                    </div>
+            
+                    <div class="field">
+                        <label for="fechaIngreso">Fecha de Ingreso</label>
+                        <input type="date" id="fechaIngreso" name="fechaIngreso" >
+                        <div class="error"></div>
+                    </div>
+            
+                    <div class="field">
+                        <label for="dependencia">Dependencia donde labora</label>
+                        <input type="text" id="dependencia" name="dependencia" >
+                        <div class="error"></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="form-space">
+                <div class="form-items">
+                    <h2 class="heading">Datos del profesional en FunaVid</h2>
+            <div class="form-group">
+                <!-- Observaciones -->
+            <div class="field">
+                <label for="observaciones">Observaciones</label>
+                <textarea id="observaciones" name="observaciones"></textarea>
+                <div class="error"></div>
+            </div>
+    
+            <!-- Estado -->
+            <div class="field">
+                <label for="estado">Estado</label>
+                <select id="estado" name="estado" >
+                    <option selected disabled>Seleccionar</option>
+                    <option value="activo">Activo</option>
+                    <option value="inactivo">Inactivo</option>
+                </select>
+                <div class="error"></div>
+            </div>
+    
+            <div class="field">
+                <label for="encargado">Encargado</label>
+                <input type="text" id="encargado" name="encargado">
+                <div class="error"></div>
+            </div>
+    
+            <div class="field">
+                <label for="fechaInicial">Fecha Inicial</label>
+                <input type="date" id="fechaInicial" name="fechaInicial" >
+                <div class="error"></div>
+            </div>
+    
+            <div class="field">
+                <label for="tipoVoluntario">Tipo Voluntario:</label>
+                <select id="tipoVoluntario" name="tipoVoluntario" >
+                    <option selected disabled>Seleccionar</option>
+                    <option value="tipo1">Tipo 1</option>
+                    <!-- Agrega más opciones según tus necesidades -->
+                </select>
+                <div class="error"></div>
+            </div>
+    
+            <div class="field">
+                <label for="fechaFinal">Fecha Final:</label>
+                <input type="date" id="fechaFinal" name="fechaFinal">
+                <div class="error"></div>
+            </div>
+    
+            <div class="field">
+                <label for="tipoProfesional">Tipo Profesional</label>
+                <select id="tipoProfesional" name="tipoProfesional" >
+                    <option selected disabled>Seleccionar</option>
+                    <option value="tipoA">Tipo A</option>
+                    <!-- Agrega más opciones según tus necesidades -->
+                </select>
+                <div class="error"></div>
+            </div>
+            </div>  
+                </div>
+            </div>
+            <div class="crear_voluntario">
+                <button type="submit" class="btn btn-primary" >Crear voluntario</button>
+            </div>
+        </form>
+    </main>
+
+    
+
+    <script src="/js/validaciones.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

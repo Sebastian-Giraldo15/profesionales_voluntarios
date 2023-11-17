@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Profesionales Voluntarios</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body>
+  <header>
+    <!-- place navbar here -->
+  </header>
+  <section>
+  <div class="titulo_p">
+    <h1>Profesionales Voluntarios</h1>
+  </div>
+  <div class="titulo_s">
+    <a href="formulario.html"><button type="button" class="btn btn-secondary">Crear Voluntario</button></a>
+  </div>
+  <img src="/IMG/mas.jpg" alt="icon_add" class="icon_add">
+</section>
+<section class="search_icon">
+  <form class="form-inline my-2 my-lg-0" >
+    <div>
+      <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+    </div>
+    <!-- <div>
+      <button class="btn btn-outline-warning my-2 my-sm-0" type="submit"><img src="/IMG/buscar.png" alt="icon"></button>
+    </div> -->
+  </form>
+  
+</section>
+
+  <main>
+    <div class="table">
+    <table class="table table-striped" id="data-table">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Tipo documento</th>
+            <th scope="col">Numero documento</th>
+            <th scope="col">Telefono</th>
+            <th scope="col">Tipo de profesional</th>
+            <th scope="col">Estado</th>
+            <th scope="col" class="th_center">Opciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Julian Zapata</td>
+            <td>CC</td>
+            <td>1020402344</td>
+            <td>3215473018</td>
+            <td>Psicologó</td>
+            <td>Activo</td>
+            <td class="Opciones">
+                <div>
+                  <a href=""><img src="IMG/editar.jpg" alt="icon" class="opc_edit"></a>
+                </div>
+                <div>
+                  <a onclick="alerta_eliminar()"><img src="IMG/eliminar.jpg" alt="icon" class="opc_delete" id="eliminar" ></a>
+                </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Daniel Ariztizabal</td>
+            <td>CC</td>
+            <td>6389276482</td>
+            <td>3104578934</td>
+            <td>Medico</td>
+            <td>Inactivo</td>
+            <td class="Opciones">
+              <div>
+                <img src="IMG/editar.jpg" alt="icon" class="opc_edit">
+              </div>
+              <div>
+                <img src="IMG/eliminar.jpg" alt="icon" class="opc_delete" id="eliminar" onclick="">
+              </div>
+          </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Hamilton parra</td>
+            <td>CC</td>
+            <td>1000623098</td>
+            <td>3100098765</td>
+            <td>Oftalmólogo</td>
+            <td>Activo</td>
+            <td class="Opciones">
+              <div>
+                <img src="IMG/editar.jpg" alt="icon" class="opc_edit">
+              </div>
+              <div>
+                <img src="IMG/eliminar.jpg" alt="icon" class="opc_delete" onclick="mostrarAlerta()">
+              </div>
+          </td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Sebastian Giraldo</td>
+            <td>CC</td>
+            <td>10000533684</td>
+            <td>30175174115</td>
+            <td>Psicologó</td>
+            <td>Activo</td>
+            <td class="Opciones">
+                <div>
+                  <a href=""><img src="IMG/editar.jpg" alt="icon" class="opc_edit"></a>
+                </div>
+                <div>
+                  <a onclick="alerta_eliminar()"><img src="IMG/eliminar.jpg" alt="icon" class="opc_delete" id="eliminar" ></a>
+                </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="generar_excel">
+      <button type="button" id="generarExcelBtn">Generar excel</button>
+    </div>
+  </main>  
+  </dialog>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+    <!--alerta-->
+  <script src="/js/alerts/alertas.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!--js-->
+  <!--Boxicon-->
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.full.min.js"></script>
+  <script src="/js/descargar_excel.js"></script>
+  
+</body>
+
+</html>
